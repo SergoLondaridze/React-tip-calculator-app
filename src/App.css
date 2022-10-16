@@ -1,38 +1,363 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;800&family=Overpass:wght@400;500;600;700&family=Poppins:wght@400;900&family=Space+Mono:wght@700&display=swap');
+
+.maincontainer {
+  max-width: 1440px;
+  width: 100%;
+  background-color: hsl(172, 67%, 45%);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100vh;
+}
+
+.logo {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.card {
+  height: 481px;
+  width: 920px;
+  border-radius: 25px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.left {
+  width: 382px;
+  height: 417px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.customInput {
+  height: 48px;
+  width: 117px;
+  border-radius: 5px;
+  background: hsl(185deg, 38%, 97%);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #00474B;
+  border: none;
+  outline: none;
+  text-align: right;
+  cursor: pointer;
+  padding-right: 10px;
+  position: relative;
+  left: 6px;
+}
+
+.customInput::placeholder {
+  font-family: 'Space Mono';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #547878;
+  padding-right: 6px;
+}
+
+.input {
+  height: 48px;
+  width: 379px;
+  text-align: right;
+  cursor: pointer;
+  background: hsl(185deg, 38%, 97%);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 6px 17px;
+  text-align: right;
+  font-size: 24px;
+  line-height: 36px;
+  color: hsl(183deg, 100%, 15%);
+  font-weight: 700;
+}
+
+.input::placeholder {
+  font-family: 'Space Mono';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+
+}
+
+.btncontainer {
+  width: 100%;
+  margin-left: 6px;
+}
+
+#p11 {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #5E7A7D;
+  margin-bottom: 6px;
+  margin-left: 12px;
+}
+
+.btncontainer button {
+  height: 48px;
+  width: 117px;
+  border-radius: 5px;
+  background: #00474B;
+  margin: 5px;
+  font-family: 'Space Mono';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.resultposition {
+  position: absolute;
+  left: 500px;
+  bottom: 100px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.right {
+  height: 417px;
+  width: 413px;
+  border-radius: 15px;
+  background: #00474B;
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.boxright {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tipamount {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btnrst {
+  height: 48px;
+  width: 333px;
+  border-radius: 5px;
+  background-color: #9FE8DF;
+  font-family: 'Space Mono';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resetbox {
+  height: 48px;
+  width: 333px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.totalperson {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.p1 {
+  font-family: 'Space Mono';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.p2 {
+  font-family: 'Space Mono';
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #7F9D9F;
+}
+
+.resultprice {
+  font-family: 'Space Mono';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -1px;
+  text-align: right;
+  color: #26C2AE;
+}
+
+.leftp {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #5E7A7D;
+  margin-bottom: 6px;
+  margin-left: 2px;
+}
+
+.inputdiv {
+  position: relative;
+  left: 10px;
+}
+
+.inputdiv img {
+  position: relative;
+  bottom: 32px;
+  left: 16px;
+}
+
+#backactive {
+  color: black;
+  background-color: #9FE8DF;
+}
+
+.cuntbezero1 {
+  font-family: 'Space Mono';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: #E17457;
+  position: absolute;
+  top: 6px;
+  left: 250px;
+}
+
+.cuntbezero2 {
+  font-family: 'Space Mono';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: #E17457;
+  position: absolute;
+  bottom: 270px;
+  left: 250px;
+}
+
+.cuntbezero3 {
+  font-family: 'Space Mono';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: #E17457;
+  position: absolute;
+  bottom: 80px;
+  left: 250px;
+}
+
+#rstbtn {
+  background-color: #0D686D;
+}
+
+#idborder {
+  border: 2px solid #26C2AE;
+}
+
+@media(max-width:375px) {
+  .maincontainer {
+    max-width: 375px;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .card {
+    flex-direction: column;
+    height: 789px;
+    width: 375px;
+    position: relative;
+    bottom: 30px;
+  }
+
+  .input {
+    width: 311px;
+  }
+
+  .left {
+    width: 340px;
+  }
+
+  .btnrst {
+    width: 281px;
+    margin-left: 20px;
+  }
+
+  .right {
+    height: 257px;
+    width: 327px;
+    position: absolute;
+    border-radius: 15px;
+    top: 520px;
+    font-size: 32px
+  }
+
+  .btnprecent {
+    height: 48px;
+    width: 146px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 327px;
+  }
+
+  .cuntbezero1 {
+    bottom: 80px;
+    left: 200px;
+  }
+
+  .cuntbezero2 {
+    bottom: 290px;
+    left: 200px;
+  }
+
+  .cuntbezero3 {
+    left: 200px;
+    bottom: 70px;
+  }
+
+
+
+  .btnprecent {
+    height: 48px;
+    width: 146px !important;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 327px;
+  }
+
+  .customInput {
+    width: 146px;
   }
 }
